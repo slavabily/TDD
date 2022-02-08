@@ -10,4 +10,9 @@ public extension Bool {
             
         }
     }
+    
+    init?(bit: UInt8) {
+        let int = Int(bit)
+        self.init(bit: int)
+    }
 }
